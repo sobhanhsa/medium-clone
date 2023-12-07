@@ -13,8 +13,8 @@ const ThemeToggle = () => {
     return (<div className={styles.container} onClick={themeToggle}>
         <Image width={14} height={14} src="/moon.png" alt="moon image" />
         <div className={styles.ball} style={theme === "dark" 
-        ? {left:"1px",backgroundColor:"black"}
-        : {left:"unset",right:"1px",backgroundColor:"white"}}></div>
+        ? {left:"3px",backgroundColor:"black"}
+        : {left:"unset",right:"3px",backgroundColor:"var(--bg)"}}></div>
         <Image width={14} height={14} src="/sun.png" alt="sun image"   />
     </div>);
 }

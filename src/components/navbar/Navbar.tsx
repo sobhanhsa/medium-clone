@@ -5,6 +5,7 @@ import AuthLinks from "../authLinks/AuthLinks";
 import ThemeToggle from "../themeToggle/ThemeToggle";
 import { useContext } from "react";
 import { ThemeContext, ThemeContextType } from "@/context/ThemeContext";
+import ResponsiveMenu from "../responsiveMenu/ResponsiveMenu";
 
 const Navbar = () => {
 
@@ -22,10 +23,14 @@ const Navbar = () => {
             <div className={styles.logo}>PilleBlog</div>
             <div className={styles.links}>
                 <ThemeToggle />
-                <Link href={"/"}>Homepage</Link>
-                <Link href={"/contact"}>Homepage</Link>
-                <Link href={"/about"}>About</Link>
+                <Link className={styles.regularLinks} href={"/"}>Homepage</Link>
+                <Link className={styles.regularLinks} href={"/contact"}>Contact</Link>
+                <Link className={styles.regularLinks} href={"/about"}>About</Link>
                 <AuthLinks />
+                <div className={styles.responsiveMenu}>    
+                    <ResponsiveMenu />
+                </div>
+                    
             </div>
         </div>
     );

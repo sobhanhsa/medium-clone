@@ -60,8 +60,6 @@ a {
 
     padding : 0 80px 0 80px;
 
-    background-color: var(--softBg);
-
 }
 
 @media screen and (max-width:1536px) {
@@ -92,5 +90,11 @@ a {
 @media screen and (max-width:640px) {
     .wrapper {
         max-width: 475px;
+    }
+}
+
+@media screen and (max-width:640px) {
+    .wrapper {
+        padding: 0 20px 0 20px;
     }
 }
