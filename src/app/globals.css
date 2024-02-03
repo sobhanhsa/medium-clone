@@ -44,6 +44,8 @@ a {
 
 .container {
 
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+
     background-color: var(--bg);
     
     min-height: 100vh;
@@ -98,3 +100,14 @@ a {
         padding: 0 20px 0 20px;
     }
 }
+
+.ql-container {
+    font-size: 28px !important;
+}
+
+
+
+.quill > .ql-container > .ql-editor.ql-blank::before {
+    color: #b3b3b1;
+} 
+

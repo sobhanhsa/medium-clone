@@ -6,6 +6,7 @@ import ThemeToggle from "../themeToggle/ThemeToggle";
 import { useContext } from "react";
 import { ThemeContext, ThemeContextType } from "@/context/ThemeContext";
 import ResponsiveMenu from "../responsiveMenu/ResponsiveMenu";
+import PublishButton from "../publishButton/PublishButton";
 
 const Navbar = () => {
 
@@ -27,6 +28,7 @@ const Navbar = () => {
                 <Link className={styles.regularLinks} href={"/contact"}>Contact</Link>
                 <Link className={styles.regularLinks} href={"/about"}>About</Link>
                 <AuthLinks />
+                {/* <PublishButton /> */}
                 <div className={styles.responsiveMenu}>    
                     <ResponsiveMenu />
                 </div>

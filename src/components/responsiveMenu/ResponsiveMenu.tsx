@@ -8,9 +8,11 @@ const ResponsiveMenu = () => {
 
     const [isOpen, setIsOpen] = useState(false)
 
-    useEffect(() => (() => {
-        setIsOpen(false)
-    }),[])
+    useEffect(() => (
+        () => {
+            setIsOpen(false)
+        }
+    ),[])
 
     return ( 
         <div className={styles.container}>

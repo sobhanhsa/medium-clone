@@ -7,13 +7,19 @@ import CardList from "@/components/cardlist/CardList";
 import Menu from "@/components/menu/Menu";
 
 
-export default function Home():React.ReactNode {
+export default function Home(
+    {searchParams}:{searchParams:{page?:string}}
+  ):React.ReactNode {
+
+  const page = parseInt(searchParams?.page as string) || 1;
+
+
   return (
     <div className={styles.container}>
       <Featured />
       <CategoryList />
       <div className={styles.content}>
-        <CardList />
+        <CardList page={page} cat="" />
         <Menu />
       </div>
     </div>

@@ -38,11 +38,14 @@
 
     position: absolute;
 
+    z-index: 999;
+
     top: 100px;
 
     left: 0;
 
     width: 100vw;
+
 
     background-color: var(--softBg);
 
