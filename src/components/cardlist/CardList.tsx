@@ -3,7 +3,7 @@ import Pagination from "../pagination/Pagination";
 import styles from "./cardlist.module.css"
 import Card from "../card/Card";
 import { pages } from "next/dist/build/templates/app-page";
-import { PostType } from "@/app/types/postType";
+import { PostType } from "@/types/postType";
 
 //getPosts
 
